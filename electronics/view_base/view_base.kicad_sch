@@ -14875,7 +14875,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061fcaa5b")
 		(property "Reference" "J2"
-			(at 40.8178 54.1782 0)
+			(at 38.1 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14883,7 +14883,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0"
-			(at 40.8178 56.4896 0)
+			(at 38.354 56.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16028,7 +16028,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000620180e0")
 		(property "Reference" "U3"
-			(at 114.3 57.15 0)
+			(at 110.744 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16036,7 +16036,7 @@
 			)
 		)
 		(property "Value" "CH340C"
-			(at 118.11 81.28 0)
+			(at 110.744 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
