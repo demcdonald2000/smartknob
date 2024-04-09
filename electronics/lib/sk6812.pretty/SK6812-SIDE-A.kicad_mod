@@ -1,36 +1,186 @@
-(module SK6812-SIDE-A (layer F.Cu) (tedit 6205A40B)
-  (fp_text reference REF** (at 2.032 -1.397) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value SK6812-SIDE-A (at 0 -0.5) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -0.7 -0.6) (end 4.3 -0.6) (layer F.SilkS) (width 0.1))
-  (fp_line (start 4.3 -0.6) (end 4.3 0.7) (layer F.SilkS) (width 0.1))
-  (fp_line (start 4.3 0.7) (end 3.7 1.4) (layer F.SilkS) (width 0.1))
-  (fp_line (start 3.7 1.4) (end -0.7 1.4) (layer F.SilkS) (width 0.1))
-  (fp_line (start -0.7 1.4) (end -0.7 -0.6) (layer F.SilkS) (width 0.1))
-  (pad 1 smd custom (at 0 0) (size 1 0.55) (layers F.Cu F.Paste F.Mask)
-    (zone_connect 0)
-    (options (clearance outline) (anchor rect))
-    (primitives
-      (gr_poly (pts
-         (xy -0.05 -0.525) (xy 0.5 -0.525) (xy 0.5 0.675) (xy -0.05 0.675)) (width 0))
-    ))
-  (pad 2 smd rect (at 1.35 0) (size 0.7 1.2) (drill (offset 0 0.075)) (layers F.Cu F.Paste F.Mask)
-    (zone_connect 0))
-  (pad 3 smd rect (at 2.375 0) (size 0.45 1.2) (drill (offset 0 0.075)) (layers F.Cu F.Paste F.Mask)
-    (zone_connect 0))
-  (pad 4 smd custom (at 3.6 0) (size 1 0.55) (layers F.Cu F.Paste F.Mask)
-    (zone_connect 0)
-    (options (clearance outline) (anchor rect))
-    (primitives
-      (gr_poly (pts
-         (xy 0.05 -0.525) (xy -0.5 -0.525) (xy -0.5 0.675) (xy 0.05 0.675)) (width 0))
-    ))
-  (model ${KIPRJMOD}/../lib/sk6812.3dshapes/SK6812-SIDE-A.step
-    (offset (xyz 1.76 -0.6 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "SK6812-SIDE-A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 1.905 2.54 0)
+		(layer "F.SilkS")
+		(uuid "bfdf6315-dbf9-4fc7-bbcb-033cf4749456")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SK6812-SIDE-A"
+		(at 1.905 -1.27 0)
+		(layer "F.Fab")
+		(uuid "9dd3ef6c-0689-4830-a760-7c676f8588c8")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91692cee-2f00-4456-9c62-028ce014bd7a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e7166a9f-60ee-42b8-898e-807c2db20915")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3f43016-b397-4efa-95ca-15dbc56e2a4b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.7 -0.6)
+		(end 4.3 -0.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ab188b0-6fa6-4cbe-985a-73f535494413")
+	)
+	(fp_line
+		(start -0.7 1.4)
+		(end -0.7 -0.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fb846513-e897-471c-a042-eba1e8646e01")
+	)
+	(fp_line
+		(start 3.7 1.4)
+		(end -0.7 1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3d8b7a18-e4b4-46be-aad7-85a66511aef4")
+	)
+	(fp_line
+		(start 4.3 -0.6)
+		(end 4.3 0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "191337c7-b760-4ad3-a724-70d699f97a4b")
+	)
+	(fp_line
+		(start 4.3 0.7)
+		(end 3.7 1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b74268d-9758-4cb1-806b-93e67d241ba3")
+	)
+	(pad "1" smd custom
+		(at 0 0)
+		(size 1 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(zone_connect 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.05 -0.525) (xy 0.5 -0.525) (xy 0.5 0.675) (xy -0.05 0.675)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "8679ecd9-e425-4db9-87f5-635fb08b8eb5")
+	)
+	(pad "2" smd rect
+		(at 1.35 0)
+		(size 0.7 1.2)
+		(drill
+			(offset 0 0.075)
+		)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(zone_connect 0)
+		(uuid "765c00ae-0398-4b86-b257-87c90de5a40a")
+	)
+	(pad "3" smd rect
+		(at 2.375 0)
+		(size 0.45 1.2)
+		(drill
+			(offset 0 0.075)
+		)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(zone_connect 0)
+		(uuid "293b1f83-0dd9-40c4-a863-7d44e4acb576")
+	)
+	(pad "4" smd custom
+		(at 3.6 0)
+		(size 1 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(zone_connect 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.05 -0.525) (xy -0.5 -0.525) (xy -0.5 0.675) (xy 0.05 0.675)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "6060580f-2508-4424-abc1-001d5364a5b7")
+	)
+	(model "${KIPRJMOD}/../lib/sk6812.3dshapes/SK6812-SIDE-A.step"
+		(offset
+			(xyz 1.76 -0.6 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
